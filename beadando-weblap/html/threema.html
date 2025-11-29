@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Threema chatapp bemutatása">
+    <meta name="keywords" content="EE2E, encryption, metadata, titkosítás, instant messenger, Threema">
+    <meta name="author" content="Vida Vilmos">
+    <title>Threema bemutatása</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <p class="hTitle">Responsible<br>Messaging</p>
+            <button id="menuGomb" >☰</button>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Főoldal</a></li>
+                        <li><a href="../html/signal.html">Signal</a></li>
+                        <li><a href="../html/threema.html">Threema</a></li>
+                        <li><a href="../html/session.html">Session</a></li>
+                        <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                        <li><a href="../html/contact.html">Kapcsolat</a></li>
+                        <li><a href="../html/jatek.html">Játék</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+<article>
+
+
+    <h1>Threema — Secure. Anonymous. Private.</h1>
+    <p>
+        A Threema egy biztonságos, E2EE-t használó, adatminimalizáló üzenetküldő alkalmazás,
+        amelyet Svájcban fejlesztenek és üzemeltetnek. Kiemelt célja, hogy az üzenetküldés biztonságos
+        legyen akkor is, ha a felhasználó nem akar vagy nem tud személyes adatokkal regisztrálni.
+        A Threema különösen népszerű olyan intézmények, vállalatok és magánszemélyek körében,
+        akik magas szintű adatvédelmet szeretnének, de a kényelem és a felhasználói élmény megtartása mellett.
+    </p>
+
+
+    <section>
+        <h2>Mit nyújt a Threema?</h2>
+
+        <section>
+            <h3>Alapgondolat</h3>
+            <p>
+                A Threema-nál a <strong>„Privacy by Design”</strong> a központi filozófia.
+                Ez azt jelenti, hogy a rendszer eleve úgy lett megtervezve, hogy minél kevesebb adat keletkezzen,
+                és amennyi mégis, az is csak a felhasználónál maradjon, ne a szervereknél.
+            </p>
+            <p>
+                A Threema használható teljesen anonim módon — nincs szükség telefonszámra, e-mail címre vagy
+                egyéb személyes adatra a fiók létrehozásához.
+            </p>
+        </section>
+
+        <section>
+            <h3>Fő funkciók</h3>
+            <ul>
+                <li>End-to-end titkosítás minden kommunikációra (üzenetek, hang, fájlok, csoportok).</li>
+                <li>Nincs szükség telefonszámra vagy e-mail címre.</li>
+                <li>Threema ID azonosítás a felhasználókhoz.</li>
+                <li>Offline működés és kontaktlisták tárolása csak a készüléken.</li>
+                <li>Nyílt forráskód a kliens oldalon.</li>
+                <li>Svájci joghatóság és adatvédelmi törvények.</li>
+            </ul>
+        </section>
+    </section>
+
+    <section>
+        <h2>Működési alapok</h2>
+
+        <section>
+            <h3>Threema ID rendszer</h3>
+            <p>
+                A felhasználók egy egyedi Threema ID-t kapnak, például: <code>ABCD1234</code>.
+                Ez szolgál az azonosításra, így nem kapcsolódik telefonszámhoz vagy valós személyazonossághoz.
+            </p>
+        </section>
+
+        <section>
+            <h3>Decentralizált adatkezelés</h3>
+            <p>
+                A Threema fontos elve, hogy az adatok nagy része csak a készüléken marad:
+                nincsenek tárolt üzenetek a szerveren, és a metaadat-kezelést minimálisra szorítják.
+                A kontaktlistát nem uploadolják, hanem kriptográfiailag hash-elik és úgy egyeztetik.
+            </p>
+        </section>
+
+        <section>
+            <h3>Biztonsági modell</h3>
+            <p>
+                A Threema az <strong>NaCl (Networking and Cryptography Library)</strong> kriptográfiai könyvtárat használja
+                — ez egy modern, auditált kódbázis erős titkosítási primitívekkel.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Előnyök</h2>
+
+        <section>
+            <h3>Nem szükséges telefonszám</h3>
+            <p>
+                A Threema nagy előnye az olyan alkalmazásokkal szemben, mint a WhatsApp vagy a Signal,
+                hogy teljes értékűen működik telefonszám vagy bármilyen személyes adat nélkül.
+            </p>
+        </section>
+
+        <section>
+            <h3>Svájci jogi háttér</h3>
+            <p>
+                A svájci adatvédelmi törvények a világ legszigorúbbjai közé tartoznak,
+                így a Threema nem csak technikailag, hanem jogilag is extra védelmet biztosít.
+            </p>
+        </section>
+
+        <section>
+            <h3>Metaadat minimalizálás</h3>
+            <p>
+                Nem tárolnak kapcsolati adatokat, IP-címeket vagy üzeneteket központi szervereken,
+                és nem követik nyomon a felhasználói aktivitást.
+            </p>
+        </section>
+
+        <section>
+            <h3>Vállalati használatra is alkalmas</h3>
+            <p>
+                A Threema Work vállalati verziót is kínál, amely nagy szervezetek számára is auditálható,
+                szabályozható titkosított kommunikációt biztosít.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Hátrányok és kompromisszumok</h2>
+
+        <section>
+            <h3>Fizetős alkalmazás</h3>
+            <p>
+                A Threema nem ingyenes — egyszeri vásárlást igényel az App Store-ban vagy Google Play-en.
+                Ez sok felhasználót eltántoríthat, ugyanakkor biztosítja, hogy a szolgáltatás nem reklámalapú.
+            </p>
+        </section>
+
+        <section>
+            <h3>Nem teljesen nyílt forráskódú</h3>
+            <p>
+                Bár a kliens teljes egészében nyílt forráskódú, a szerveroldal nem az.
+                Emiatt egyesek visszatartásának oka lehet, bár a rendszer működése részletesen dokumentált.
+            </p>
+        </section>
+
+        <section>
+            <h3>Kisebb felhasználói bázis</h3>
+            <p>
+                A Threema nem annyira elterjedt, mint a Signal vagy a WhatsApp,
+                így egyes felhasználóknak nehéz lehet meggyőzni az ismerőseiket a váltásra.
+            </p>
+        </section>
+
+        <section>
+            <h3>Nincs felhőalapú szinkronizáció</h3>
+            <p>
+                A biztonság és adatminimalizálás miatt a Threema nem használ központi felhőszinkronizációt,
+                így a készülékváltás vagy adatmentés bonyolultabb lehet.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Összevetés más platformokkal</h2>
+
+        <p>
+            ▶<strong>WhatsApp</strong>-hoz képest: nincs telefonszám-kötelezettség, nincs metaadat-gyűjtés,
+            nincs Facebook/Meta tulajdonosi háttér, jobb adatvédelmi gyakorlat.
+        </p>
+        <p>
+            ▶ <strong>Signal</strong>-hoz képest: hasonló filozófia, de decentralizáció helyett szerveralapú működés.
+            Cserébe fizetős, viszont telefonszám nélkül is használható.
+        </p>
+        <p>
+            ▶ <strong>Session</strong>-höz képest: nem teljesen decentralizált, de stabilabb, gyorsabb,
+            kiforrottabb felhasználói élményt nyújt.
+        </p>
+    </section>
+
+</article>
+
+    </main>
+    <footer>
+        <div id="footerDiv">
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Főoldal</a></li>
+                    <li><a href="../html/signal.html">Signal</a></li>
+                    <li><a href="../html/threema.html">Threema</a></li>
+                    <li><a href="../html/session.html">Session</a></li>
+                    <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                    <li><a href="../html/contact.html">Kapcsolat</a></li>
+                    <li><a href="../html/jatek.html">Játék</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Placeholder</li>
+                <li>Placeholder</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

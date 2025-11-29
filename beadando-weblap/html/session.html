@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Session chatapp bemutatása">
+    <meta name="keywords" content="EE2E, encryption, metadata, titkosítás, instant messenger, Session">
+    <meta name="author" content="Vida Vilmos">
+    <title>Session bemutatása</title>
+    
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <p class="hTitle">Responsible<br>Messaging</p>
+            <button id="menuGomb" >☰</button>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Főoldal</a></li>
+                        <li><a href="../html/signal.html">Signal</a></li>
+                        <li><a href="../html/threema.html">Threema</a></li>
+                        <li><a href="../html/session.html">Session</a></li>
+                        <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                        <li><a href="../html/contact.html">Kapcsolat</a></li>
+                        <li><a href="../html/jatek.html">Játék</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+     <article>
+
+        <h1>Session — Privacy you can trust</h1>
+
+        <p>
+            A Session egy decentralizált, metaadat-minimalista üzenetküldő alkalmazás, amelyet azok számára fejlesztettek,
+            akik valódi anonimitást és adatvédelmet keresnek. A Session az Oxen blokklánc-hálózatra épít, és célja, hogy
+            ne csak az üzenetek tartalmát, hanem a felhasználók közti kapcsolat metaadatait is elrejtse vagy minimálisra csökkentse.
+        </p>
+
+    <section>
+        <h2>Mit nyújt a Session?</h2>
+
+        <section>
+            <h3>Alapgondolat</h3>
+            <p>
+                A Session célja, hogy biztosítsa az üzenetküldés valódi anonimitását — nem szükséges telefonszám vagy e-mail
+                cím, és a rendszer a lehető legkevesebb metaadat tárolására törekszik. Ez különbözteti meg a legtöbb más,
+                még E2EE-t használó alkalmazástól is.
+            </p>
+        </section>
+
+        <section>
+            <h3>Fő funkciók</h3>
+            <ul>
+                <li>End-to-end titkosítás minden üzenetnél.</li>
+                <li>Nincs szükség telefonszámra, e-mailre vagy személyes adatokra.</li>
+                <li>Session ID alapú azonosítás (a telefon helyett).</li>
+                <li>Decentralizált üzenetkezelés: nincs központi szerver.</li>
+                <li>Beépített onion routing a forgalom anonimizálására.</li>
+                <li>Egyéni és csoportos beszélgetések, valamint mellékletek.</li>
+            </ul>
+        </section>
+    </section>
+
+    <section>
+        <h2>Műszaki alapok</h2>
+
+        <section>
+            <h3>Decentralizáció és Oxen hálózat</h3>
+            <p>
+                A Session az Oxen nevű, privát kommunikációt és kriptográfiai protokollokat támogató blokklánc-hálózatot
+                használja. A Session üzeneteket nem egy központi szerver tárolja, hanem egy decentralizált <strong>Service Node</strong>
+                hálózat továbbítja és ideiglenesen titkosítva tárolja. Ennek célja az, hogy ne lehessen egyszerűen adatbázist
+                lefoglalni vagy lekérni egy szolgáltatótól.
+            </p>
+        </section>
+
+        <section>
+            <h3>Session ID és anonimitás</h3>
+            <p>
+                A Session-ben nincs felhasználói fiók hagyományos értelemben. A felhasználók egy véletlenszerűen generált Session ID-t kapnak,
+                amely 66 karakterből áll. Ez az azonosító nem kapcsolódik személyes adathoz, telefonszámhoz, SIM-hez vagy IP-hez.
+            </p>
+        </section>
+
+        <section>
+            <h3>Onion routing</h3>
+            <p>
+                A Session az Onion Routing egy változatát alkalmazza, így az üzenetek több csomóponton keresztül haladnak,
+                mielőtt elérnék a címzettet. Ez csökkenti a metaadatok visszafejthetőségét, mivel a hálózat egyetlen pontján sem
+                látható egyszerre a feladó és a címzett. Ez a megközelítés hasonlít a Tor működésére.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Előnyök</h2>
+
+        <section>
+            <h3>Teljes anonimitás telefonszám nélkül</h3>
+            <p>
+                A Session egyik legfontosabb előnye, hogy nincs szükség személyes azonosítókra. Ez azt jelenti, hogy a felhasználók
+                nincsenek egy telefonszámhoz, SIM kártyához, névjegyzékhez vagy egyéb fiók-típusú adathoz kötve.
+            </p>
+        </section>
+
+        <section>
+            <h3>Minimális metaadat és decentralizált infrastruktúra</h3>
+            <p>
+                A Service Node-ok és az onion routing kombinációja azt jelenti, hogy nincs egyszerű mód a metaadatok
+                visszafejtésére, és nincs egyetlen központi pont, amit le lehet hallgatni, le lehet kapcsolni vagy lefoglalni.
+            </p>
+        </section>
+
+        <section>
+            <h3>Nyílt forráskód</h3>
+            <p>
+                A Session kódja teljes mértékben nyílt forrású, így szakértők és felhasználók egyaránt vizsgálhatják.
+                Ez a transzparencia alapfeltétele a valódi biztonsági auditoknak.
+            </p>
+        </section>
+
+        <section>
+            <h3>Nincs adatmonetizáció</h3>
+            <p>
+                A Session mögött álló modell nem épít reklámra vagy felhasználói adatgyűjtésre — ellentétben a központi platformokkal.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Hátrányok és kompromisszumok</h2>
+
+        <section>
+            <h3>Üzenetkézbesítés lassabb lehet</h3>
+            <p>
+                A decentralizált routing és az onion útvonalválasztás miatt az üzenetek kézbesítése lassabb lehet
+                hagyományos, szerver-alapú alkalmazásokhoz képest. Ez a biztonság és teljes anonimitás ára.
+            </p>
+        </section>
+
+        <section>
+            <h3>Korlátozottabb felhasználói élmény</h3>
+            <p>
+                Bizonyos megszokott funkciók (felhőmentés, több eszköz kényelmes szinkronizációja, névjegyzék-szinkronizáció,
+                státusz információk) hiányoznak vagy korlátozottak a privátsság miatt.
+            </p>
+        </section>
+
+        <section>
+            <h3>Decentralizált hálózat erőforrás-igénye</h3>
+            <p>
+                A blokklánc-alapú rendszer és a Service Node hálózat nem csak fejlesztési, de infrastruktúra szempontból is
+                komplex, és a fenntartáshoz aktív közösségre és erőforrásokra van szükség.
+            </p>
+        </section>
+
+        <section>
+            <h3>Kisebb felhasználóbázis</h3>
+            <p>
+                Mivel a Session kevésbé ismert, előfordulhat, hogy nehezebb rávenni az ismerősöket az alkalmazáshasználatára,
+                így kevésbé alkalmas "mindenkivel csevegős" platformnak.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Gyakorlati tanácsok</h2>
+
+        <section>
+            <h3>Ha teljes anonimitást szeretnél</h3>
+            <ul>
+                <li>Használj VPN-t vagy Tor-t a Session mellett.</li>
+                <li>Ne készíts biztonsági mentést képernyőképekről vagy beszélgetésekről.</li>
+                <li>Használj véletlenszerű Session ID-t és ne add meg személyes adataidat az appban.</li>
+                <li>Frissíts rendszeresen — a decentralizált rendszerek is igénylik a biztonsági foltozást.</li>
+            </ul>
+        </section>
+    </section>
+
+</article>
+
+    </main>
+    <footer>
+        <div id="footerDiv">
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Főoldal</a></li>
+                    <li><a href="../html/signal.html">Signal</a></li>
+                    <li><a href="../html/threema.html">Threema</a></li>
+                    <li><a href="../html/session.html">Session</a></li>
+                    <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                    <li><a href="../html/contact.html">Kapcsolat</a></li>
+                    <li><a href="../html/jatek.html">Játék</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Placeholder</li>
+                <li>Placeholder</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

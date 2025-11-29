@@ -1,0 +1,62 @@
+{
+  "General information": {
+    "Developer": {"value": "Threema GmbH", "color": "grey"},
+    "Year of publication": {"value": 2012, "color": "grey"},
+    "Number of downloads (Play Store)": {"value": "5 million", "color": "grey"},
+    "Costs": {"value": "6.99 $ (Cash payment possible)", "color": "grey"}
+  },
+  "Environment": {
+    "Android": {"value": "yes", "color": "green"},
+    "iOS": {"value": "yes", "color": "green"},
+    "Desktop": {"value": "Windows, macOS, GNU/Linux", "color": "green"},
+    "Web browser": {"value": "yes", "color": "green"}
+  },
+  "Usability": {
+    "Multiple accounts/profiles (multi-account)": {"value": "no", "color": "red"},
+    "Use on multiple devices (in addition to mobile device)": {"value": "yes, but only desktop", "color": "yellow"},
+    "Find/add contacts": {"value": "Threema ID, phone number or email", "color": "grey"}
+  },
+  "Security": {
+    "Open Source": {"value": "AGPLv3 (only client)", "color": "yellow"},
+    "Comes without proprietary libraries": {"value": "yes (only F-Droid version)", "color": "yellow"},
+    "Encryption protocol / library": {"value": "NaCI / Ibex", "color": "green"},
+    "End-to-end encryption": {"value": "yes", "color": "green"},
+    "Post-quantum encryption": {"value": "no", "color": "red"},
+    "Contact verification possible": {"value": "yes", "color": "green"},
+    "Notification if contact's fingerprint changes": {"value": "yes", "color": "green"},
+    "Last security review/audit": {"value": 2024, "color": "grey"}
+  },
+  "Privacy": {
+    "Tracker integration": {"value": "no", "color": "green"},
+    "Use without phone number possible": {"value": "yes", "color": "green"},
+    "Avoids / Protects metadata during use": {"value": "partially", "color": "yellow"},
+    "Reasonably useful without sharing the contact list": {"value": "yes", "color": "green"},
+    "Supported push notification services": {"value": "Google (FCM), Apple (APN), Direct connection (Android)", "color": "green"},
+    "Advertising-free": {"value": "yes", "color": "green"}
+  },
+  "Sustainability": {
+    "Centralized / Federated / Decentralized": {"value": "centralized", "color": "red"},
+    "Infrastructure hosting": {"value": "Server in Switzerland", "color": "yellow"},
+    "Transparency / Financing (Including donations)": {"value": "clear funding", "color": "green"},
+    "Availability": {"value": "Website, Play Store, F-Droid, App Store", "color": "green"},
+    "Legal jurisdiction": {"value": "Swiss", "color": "yellow"}
+  },
+  "Functions": {
+    "Voice messages": {"value": "yes", "color": "green"},
+    "Audio-/Video-chats": {"value": "yes", "color": "green"},
+    "Group chats": {"value": "yes", "color": "green"},
+    "Maximum number of participants group chat": {"value": 256, "color": "yellow"},
+    "File exchange": {"value": "yes", "color": "green"},
+    "Self-destructing messages": {"value": "no", "color": "grey"}
+  },
+  "Backup": {
+    "Storage location": {"value": "locally and / or (own) server", "color": "green"},
+    "Automated": {"value": "partially, after setup", "color": "green"},
+    "Encrypted": {"value": "yes", "color": "green"}
+  },
+  "Kuketz-Blog": {
+    "Link to review": {"value": "Link", "color": "grey"},
+    "Operability / Target group": {"value": "Beginner", "color": "grey"},
+    "(subjective) Recommendation": {"value": "yes", "color": "green"}
+  }
+}

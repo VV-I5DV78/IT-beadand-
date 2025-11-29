@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Session chatapp bemutatása">
+    <meta name="keywords" content="EE2E, encryption, metadata, titkosítás, instant messenger, Sigal">
+    <meta name="author" content="Vida Vilmos">
+    <title>Signal bemutatása</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <p class="hTitle">Responsible<br>Messaging</p>
+            <button id="menuGomb" >☰</button>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Főoldal</a></li>
+                        <li><a href="../html/signal.html">Signal</a></li>
+                        <li><a href="../html/threema.html">Threema</a></li>
+                        <li><a href="../html/session.html">Session</a></li>
+                        <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                        <li><a href="../html/contact.html">Kapcsolat</a></li>
+                        <li><a href="../html/jatek.html">Játék</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+<article>
+        <h1>Signal — Say "hello" to privacy.</h1>
+
+        <p>
+            A Signal a világ egyik legismertebb, nyílt forráskódú, end-to-end titkosítást használó üzenetküldő alkalmazása,
+            amelyet a nonprofit Signal Foundation fejleszt. A célja, hogy biztonságos, reklám- és adatbányászat-mentes
+            kommunikációt biztosítson mindenki számára. A Signal különösen népszerű az újságírók, aktivisták,
+            civil szervezetek és biztonságtudatos felhasználók körében, mivel a fejlesztők nem üzleti modellből,
+            hanem adományokból és támogatásokból tartják fenn a szolgáltatást.
+        </p>
+        <p>
+            A Signal protokollját rengeteg más platform is használja (pl. WhatsApp, Facebook Messenger),
+            ami bizonyítja, hogy a titkosítási technológiája iparági szabványnak számít. A Signal egyszerre
+            próbál kompromisszummentes biztonságot és könnyen használható modern üzenetküldő élményt nyújtani.
+        </p>
+
+    <section>
+        <h2>Mit nyújt a Signal?</h2>
+
+        <section>
+            <h3>Magyarul, egy mondatban</h3>
+            <p>
+                A Signal alapvetően a tartalom titkosságára fókuszál: üzeneteket, hívásokat és fájlokat end-to-end titkosítással továbbít,
+                olyan módon, hogy a szolgáltató szerverei ne legyenek képesek olvasni a felhasználók üzeneteit.
+            </p>
+        </section>
+
+        <section>
+            <h3>Alapfunkciók (röviden)</h3>
+            <ul>
+                <li>Végpontok közti titkosítás minden üzenetnél és hívásnál.</li>
+                <li>Szöveg, média (kép, hang, videó), csoportos chat, hang- és videóhívás.</li>
+                <li>Opcionális eltűnő üzenetek, képernyőkép-védelem bizonyos körülmények között, biztonsági PIN és felhasználónevek.</li>
+                <li>Sealed Sender mechanizmus, amely csökkenti azt az információt, amit a szerver a feladókról lát.</li>
+            </ul>
+        </section>
+    </section>
+
+    <section>
+        <h2>Műszaki részletek (rövid, érthető összegzés)</h2>
+
+        <section>
+            <h3>E2EE és a Signal protokoll</h3>
+            <p>
+                A Signal a Signal Protocolt használja, amely modern kriptográfiai építőelemekre épül. Ennek következtében a titkosításhoz szükséges kulcsok
+                csak a kommunikáló eszközökön találhatók; a szerver nem fér hozzá a titkosított tartalomhoz. Ez a gyakorlatban azt jelenti, hogy
+                ha valaki megszerezné a Signal szervereinek adatait, a tényleges üzenetek tartalma továbbra sem olvasható számukra.
+            </p>
+        </section>
+
+        <section>
+            <h3>Sealed Sender — mi az és mit takar?</h3>
+            <p>
+                A «Sealed Sender» egy olyan mechanizmus, amellyel a küldő azonosítója (például a telefonszám) nem látható közvetlenül a
+                átviteli szerver felé — a feladó azonosítója egy további rétegben titkosítva kerül a kézbesítési csomagba. Ez csökkenti annak a
+                lehetőségét, hogy a szerver vagy a hálózati üzemeltetők könnyen lássák, ki küldött üzenetet kinek. Fontos azonban megérteni,
+                hogy a Sealed Sender nem rejti el minden metaadatot (például IP-címet).
+            </p>
+        </section>
+
+        <section>
+            <h3>Regisztráció — telefonszám és felhasználónevek</h3>
+            <p>
+                A Signal regisztrációhoz jelenleg telefonszámra van szükség (mobil vagy vezetékes — ez a hitelesítési mechanizmus része). Ugyanakkor
+                bevezették a felhasználóneveket, amelyek lehetővé teszik, hogy mások ne a telefonszámod alapján találjanak meg, így a telefonszám
+                megosztása elkerülhető a mindennapi használat során. A számmal történő regisztráció különbséget jelent a back-end metaadatoknál:
+                a regisztrált szám — vagy a fiókhoz kötött azonosító — egyike azoknak az adatoknak, amelyekhez a szolgáltató hozzáférhet.
+            </p>
+        </section>
+
+        <section>
+            <h3>Biztonság és auditálhatóság</h3>
+            <p>
+                A Signal kliens és a használt protokoll nyílt forráskódú elemeket tartalmaz, és a közösség, kutatók részéről folyamatos vizsgálatoknak van kitéve.
+                A nyílt forráskód növeli a transzparenciát, de a valós biztonságot a helyes konfiguráció, a folyamatos karbantartás és a felhasználói
+                gyakorlat (pl. biztonsági frissítések telepítése) együtt határozza meg.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Előnyök</h2>
+
+        <section>
+            <h3>Tartalmi titkosság</h3>
+            <p>
+                A Signal E2EE-je azt jelenti, hogy a tartalmat (üzenet szövegét, mellékleteket, hívásokat) harmadik fél — így a szolgáltató —
+                nem tudja elolvasni. Ez az egyik legerősebb védelem a kiszivárgások, szolgáltatói visszaélések és kormányzati hozzáférések ellen.
+            </p>
+        </section>
+
+        <section>
+            <h3>Metaadat-minimalizálás és Sealed Sender</h3>
+            <p>
+                A Signal arra törekszik, hogy a szerver oldalán tárolt metaadatok mennyiségét minimálisra csökkentse; a Sealed Sender technika tovább csökkenti
+                azt az információt, amit a szerver a feladókról láthat. Mindez együtt kevésbé teszi lehetővé a részletes profilozást a szolgáltató oldaláról.
+            </p>
+        </section>
+
+        <section>
+            <h3>Adat-monetizációtól független modell</h3>
+            <p>
+                A Signal nonprofitként és adományok / támogatások révén finanszírozott projektként nem épít hirdetési alapú üzleti modellre.
+                Ez csökkenti azt az ösztönzést, hogy felhasználói viselkedését hirdetésre optimalizálják. A felhasználói magatartás ilyen szempontú
+                „kiszolgálása” tipikusan a nagy hirdetési platformoknál vezet a személyre szabott nyomásgyakorláshoz.
+            </p>
+        </section>
+
+        <section>
+            <h3>Átláthatóság — nyílt forráskód</h3>
+            <p>
+                A nyílt forráskód lehetővé teszi a független ellenőrzést és a közösségi auditokat — ez fontos a biztonsági garanciák alátámasztásához.
+                Ha egy sebezhetőség jelenik meg, a közösség gyorsabban találhat rá és javasolhat javítást.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Hátrányok és korlátok</h2>
+
+        <section>
+            <h3>Telefonszám regisztráció — kezdeti adat</h3>
+            <p>
+                A Signal fiók létrehozásához jelenleg szükséges egy telefonszám (bár a felhasználónevek lehetővé teszik a telefonszám rejtését a
+                felfedezésnél). A regisztrációs szám és a kapcsolódó hitelesítési napló bizonyos metaadatként a rendszerben megmaradhat. Ez sokak számára
+                kompromisszumot jelenthet, különösen olyan felhasználóknak, akik teljes anonimitást szeretnének.
+            </p>
+        </section>
+
+        <section>
+            <h3>Metaadatok teljes rejtése nem garantált</h3>
+            <p>
+                Noha a Signal minimalizálja a szerveroldali metaadatokat és alkalmazza a Sealed Sender-t, bizonyos információk — például IP-címek
+                vagy a regisztrációhoz kapcsolódó adatok, illetve a küldés idejével kapcsolatos alapinformációk — továbbra is felfedhetők hálózati
+                szereplők vagy jogi kérések által. A Sealed Sender sem rejti el minden forrást (például IP-címek a hálózati rétegben megjelenhetnek).
+            </p>
+        </section>
+
+        <section>
+            <h3>Használhatóság vs. privacy kompromisszumok</h3>
+            <p>
+                Egyes kényelmi funkciók — például felhő alapú egyszerű üzenetmentés, többeszközös szinkronizáció kényelme — vagy a telefonszám alapú
+                névjegyzék-szinkronizáció kényelme ellentétes lehet a teljes adatminimalizálással. A Signal mostantól kínál titkosított felhőbackup lehetőséget
+                (opcionális, fizetős bővítéssel), ami ugyan titkosított, de ha a felhasználó elveszíti a kulcsát, a visszaállítás nem lehetséges. Ezek a döntések
+                tudatos kompromisszumok a felhasználói igények és az adatvédelem között.
+            </p>
+        </section>
+
+        <section>
+            <h3>Fenntarthatósági kérdések</h3>
+            <p>
+                Mivel a Signal nem hirdetésalapú, működését adományok, támogatások és (egyes szolgáltatásoknál) előfizetések fedezik. A nonprofit modell
+                előnyei mellett hosszú távon felmerül a fenntarthatóság kérdése — hogy elegendő lesz-e a támogatói bázis a skálázódó igényekhez.
+            </p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Gyakorlati tanácsok</h2>
+
+        <section>
+            <h3>Mit tehetsz, ha Signal-t használsz és maximalizálni szeretnéd a privátsságot?</h3>
+            <ol>
+                <li>Használd a felhasználónevet a telefonszám helyett a nyilvános megosztáshoz, ha lehetséges.</li>
+                <li>Kapcsolódj VPN-hez vagy Tor-hoz, ha szeretnéd csökkenteni az IP-cím alapú követhetőséget (ez nem Signal-specifikus, hálózati részprobléma).</li>
+                <li>Kapcsold be az eltűnő üzeneteket érzékeny beszélgetéseknél és kerüld a cloud-backupokat, ha nem szeretnél külső mentést.</li>
+                <li>Frissíts rendszeresen az appot — a biztonsági javítások fontosak.</li>
+            </ol>
+        </section>
+    </section>
+
+</article>
+
+    </main>
+    <footer>
+        <div id="footerDiv">
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Főoldal</a></li>
+                    <li><a href="../html/signal.html">Signal</a></li>
+                    <li><a href="../html/threema.html">Threema</a></li>
+                    <li><a href="../html/session.html">Session</a></li>
+                    <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                    <li><a href="../html/contact.html">Kapcsolat</a></li>
+                    <li><a href="../html/jatek.html">Játék</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Placeholder</li>
+                <li>Placeholder</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

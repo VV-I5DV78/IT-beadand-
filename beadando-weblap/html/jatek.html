@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Játék. Próbáld ki magadat a titkosítás terén!">
+    <meta name="keywords" content="EE2E, encryption, titkosítás">
+    <meta name="author" content="Vida Vilmos">
+    <title>Játék</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/jatek.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <p class="hTitle">Responsible<br>Messaging</p>
+            <button id="menuGomb" >☰</button>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Főoldal</a></li>
+                        <li><a href="../html/signal.html">Signal</a></li>
+                        <li><a href="../html/threema.html">Threema</a></li>
+                        <li><a href="../html/session.html">Session</a></li>
+                        <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                        <li><a href="../html/contact.html">Kapcsolat</a></li>
+                        <li><a href="../html/jatek.html">Játék</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<main>
+    <h1>Titkosítós játék</h1>
+    <section>
+        <p class>
+            Tedd próbára a kódfejtő képességeidet!  
+            A játék véletlenszerűen titkosítja az üzenetedet a 
+            <strong>Caesar-kóddal</strong>.  
+            Találd ki a helyes eltolást, fejtsd meg az üzenetet!
+        </p>
+
+        
+        <h2>Hogyan működik?</h2>
+        <ol>
+            <li>Megadsz egy üzenetet, ami csak az <strong>angol abc</strong> betűit tartalmazhatja.</li>
+            <li>Ezt a játék letitkosítja</li>
+            <li>Egy csúszkával állíthatod az eltolás (kulcs) értékét (0–25).</li>
+            <li>Az előnézet valós időben mutatja a dekódolt szöveget.</li>
+            <li>Ha megtalálod a helyes eltolást, akkor nyertél!</li>
+        </ol>
+        
+    </section>
+    
+    <div id="jatek">
+        
+        <label for="jatekSzoveg">Titkosítandó szöveg</label>
+        <input type="text" id="jatekSzoveg">
+        <div id="jatekError" class="errorBox"></div>
+
+        <button id="start">Játék indítása</button>
+
+        <div id="sliderDiv">
+            <input type="range" min="1" max="26" value="1" id="slider">
+        </div>
+        <div id="titkosDiv">
+            <div>Titkosított szöveg:</div>
+            <div id="titkositott"></div>
+        </div>
+        <div id="megoldasDiv">
+            <div id="sliderValue">Az aktuális érték: 1</div>
+            <div id="megfejtett"></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footerDiv">
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Főoldal</a></li>
+                <li><a href="../html/signal.html">Signal</a></li>
+                <li><a href="../html/threema.html">Threema</a></li>
+                <li><a href="../html/session.html">Session</a></li>
+                <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                <li><a href="../html/contact.html">Kapcsolat</a></li>
+                <li><a href="../html/jatek.html">Játék</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ul>
+    </div>
+</footer>       
+</body>
+</html>

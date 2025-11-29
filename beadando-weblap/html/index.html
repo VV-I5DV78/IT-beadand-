@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bevezetés a felelős chatappválasztásba.">
+    <meta name="keywords" content="EE2E, encryption, metadata, titkosítás, instant messenger, Sigal, Threema, Messenger, Session, WhatsApp, Discord, Viber, Snapchat">
+    <meta name="author" content="Vida Vilmos">
+
+
+    <title>Üzenetköldő alkalmazások tudatos megválasztása | Szempontok</title>
+
+    <link rel="icon" href="../media/favicon.ico">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div id="headerDiv">
+        <p class="hTitle">Responsible<br>Messaging</p>
+        <button id="menuGomb" >☰</button>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Főoldal</a></li>
+                    <li><a href="../html/signal.html">Signal</a></li>
+                    <li><a href="../html/threema.html">Threema</a></li>
+                    <li><a href="../html/session.html">Session</a></li>
+                    <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                    <li><a href="../html/contact.html">Kapcsolat</a></li>
+                    <li><a href="../html/jatek.html">Játék</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+<article>
+    <h1>Biztonságos üzenetküldők — fogalmak és alapok</h1>
+    
+        <p>
+            Ez az oldal összefoglalja azokat az alapfogalmakat, amelyekre a további oldalak (app-ismertetők, összehasonlító táblázatok) épülnek: mi az E2EE, mit jelent a metaadat, hogyan működik a profilozás és miért „nem ingyenes” sok online szolgáltatás.
+        </p>
+
+    <section class="flipFlex reverse">
+        <div class="flipMellett">
+            <h2>Mi az end-to-end titkosítás (E2EE)?</h2>
+
+            <section>
+                <h3>Alapfogalom</h3>
+                <p>
+                    Az end-to-end titkosítás azt jelenti, hogy a felhasználók közti üzeneteket olyan módon titkosítjuk,
+                    hogy a kulcsok és a dekódolás kizárólag a küldő és a fogadó eszközein vannak jelen — a szolgáltató szerverei
+                    nem tudják olvasni a tartalmat. Ez a megközelítés megakadályozza, hogy a köztes szolgáltató (pl. a szerver üzemeltetője)
+                    hozzáférjen a tényleges üzenetekhez. Sok, biztonságra fókuszáló messenger ezt a modellt alkalmazza.
+                </p>
+            </section>
+        </div>
+
+        <section>
+            <div class="flipBox">
+                <figure>
+                    <img src="../media/lakat.jpg" alt="" class="flipImage">
+                </figure>
+
+                <div id="lakatOutter">
+                    <div class="flipText" id="lakat">
+                        <h3>Mire jó és mire nem?</h3>
+                        <p>
+                            Az E2EE hatékonyan védi a tartalmat (szöveg, média, hívás), így ha kizárólag a tartalom kiszivárgását akarjuk megakadályozni,
+                            akkor ez a legjobb elérhető technika. Ugyanakkor az E2EE nem automatikusan megoldás minden problémára:
+                        </p>
+                        <ul>
+                            <li>Nem védi meg a felhasználói döntéseket vagy hibákat (pl. rossz címzett, képernyőkép készítése, mentések a felhőbe).</li>
+                            <li>Nem feltétlenül takarja el, hogy két fél kommunikál egymással (ez a metaadatok problémája — ld. lejjebb).</li>
+                            <li>A kulcsok és a titkosítás implementációja sem mindig triviális: a nyílt forráskód, auditok és transzparencia fontos kiegészítők.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <img src="../media/flip.png" alt="" class="flip" onclick="flippingBox(this.parentElement)">
+                <img src="../media/x.png" alt="" class="backFlip">
+            </div>
+        </section>
+    </section>
+
+    <section class="flipFlex">
+        <div class="flipMellett">
+            <h2>A „nincs mit rejtegetnem” érv problémája</h2>
+
+                <p>
+                    A magánszféra védelmével kapcsolatban az egyik leggyakrabban hallható kifogás a
+                    <strong>„nincs mit rejtegetnem”</strong> érv. Elsőre logikusnak tűnhet: ha valaki nem csinál semmi törvényelleneset
+                    vagy különösen érzékeny dolgot, akkor miért aggódna az adatai miatt? Ez a gondolkodás azonban leegyszerűsíti
+                    a magánélet valódi szerepét, és figyelmen kívül hagyja azokat a társadalmi, technológiai és etikai tényezőket,
+                    amelyek miatt a megfigyelés akkor is veszélyes, ha valaki „ártatlannak” érzi magát.
+                </p>
+                <p>
+                    A magánélet védelme tehát nem bűnözésről vagy titkolózásról szól, hanem <strong>szabadságról, választási
+                    lehetőségről és kontrollról</strong>. Jogunk van ahhoz, hogy saját magunk határozzuk meg, ki, mikor, mit és
+                    milyen célból tud rólunk. Ha ezt a jogot feladjuk csak azért, mert „nincs mit rejtegetni”, azzal gyengítjük a
+                    saját, és tágabb értelemben az egész társadalom szabadságát. A magánszféra nem luxus, hanem alapvető emberi
+                    jog — akkor is, ha épp nincs semmi különös, amit el akarunk rejteni.
+                </p>
+        </div>
+        <section>
+            <div class="flipBox">
+                <figure>
+                    <img src="../media/nothint-to-hide.jpg" alt="" class="flipImage">
+                </figure>
+
+                <div class="flipText" id="nth">
+                    <h3>Mit gyűjtenek a hagyományos üzenetküldők?</h3>
+                    <p>
+                        A Threema megfogalmazása szerint a „nincs mit rejtegetnem” érv nemcsak hibás, hanem rövidlátó is. Egyéni
+                        szinten ugyanis nem arról szól a magánélet, hogy titkolunk-e valamit, hanem arról, hogy <strong>jogunk van
+                        eldönteni, mit mutatunk meg magunkból</strong>. Az adatok gyűjtése – még ha teljesen hétköznapi információkról
+                        van szó – idővel komoly következményekkel járhat, hiszen ezek kombinálhatók, profilokká alakíthatók,
+                        majd felhasználhatók megfigyelésre, reklámozásra, manipulációra vagy akár nyomásgyakorlásra is.
+                    </p>
+                    <p>
+                        Nem szabad figyelmen kívül hagyni azt sem, hogy a társadalmi normák, a politikai helyzet vagy a hatalmi
+                        viszonyok folyamatosan változnak. Amit ma ártalmatlannak tartunk, holnap érzékeny adattá válhat. Ha valaki
+                        most úgy érzi, nincs rejtegetnivalója, az nem jelenti azt, hogy az adatainak jövőbeni felhasználása ne
+                        veszélyeztethetné — akár teljesen ártatlan emberekről is kiderült már utólag, hogy a begyűjtött adataikat
+                        nem megfelelően kezelték vagy visszaéltek velük.
+                    </p>
+                </div>
+                <img src="../media/flip.png" alt="" class="flip" onclick="flippingBox(this.parentElement)">
+                <img src="../media/x.png" alt="" class="backFlip">
+            </div>
+        </section>
+    </section>
+
+    <section>
+        <h2>A kritikus tömeg problémája</h2>
+            <p>
+                Az egyik leggyakoribb érv a biztonságos, adatminimalista üzenetküldők (mint a Signal, Threema, Session vagy SimpleX)
+                ellen, hogy „nem használja senki”, „minek még egy app” vagy „nincs kedvem megtanulni”.
+                Ez a gondolkodás azonban önmagát erősítő körforgást hoz létre: azért nem terjednek el ezek az alkalmazások,
+                mert a legtöbben azt feltételezik, hogy úgysem használja senki más.
+            </p>
+            <p>
+                A valóságban a kritikus tömeg hiánya nem technológiai, hanem pszichológiai akadály.
+                A legtöbb felhasználó gond nélkül telepít <strong>több gyorsétterem-appot, webshopot, kuponprogramot vagy
+                szórakoztató alkalmazást</strong>, mert épp szüksége van rá, vagy kedvet érez hozzá.
+                Ehhez képest egy második üzenetküldő alkalmazás letöltése és alapfunkcióinak elsajátítása sokkal kisebb
+                erőfeszítést igényel — mégis nagyobb ellenállásba ütközik.
+            </p>
+            <p>
+                Paradox módon azonban éppen az ilyen gondolkodás az, amely megakadályozza a magánszféra-barát eszközök terjedését.
+                Ha mindenki arra vár, hogy „majd ha többen használják, akkor én is letöltöm”, akkor soha nem alakul ki az a
+                felhasználói bázis, amelyhez csatlakozni lehetne. Valójában elég lenne, ha mindenki csak <strong>egy-két ismerősével</strong>
+                elkezdené használni a biztonságosabb alternatívákat — így organikusan, lépésről lépésre épülne ki a kritikus tömeg.
+            </p>
+    </section>
+
+    <section class="flipFlex">
+        <div class="flipMellett">
+            <h2>Mi az a metaadat — és miért veszélyes lehet?</h2>
+
+            <section>
+                <h3>Definíció egyszerűen</h3>
+                <p>
+                    A metaadat „adat az adatokról”: például hogy ki beszél kivel, mikor, mennyi ideig tartott a kapcsolat, mely eszközről
+                    vagy helyről történt, vagy hogy milyen típusú üzenetet küldtek (szöveg, kép, fájl). A metaadatok nem a tartalom, de nagyon
+                    sokat elárulnak a viselkedésről és kapcsolati hálókról. (Általános leírás a metaadatokról: szemléltető források).
+                </p>
+            </section>
+        </div>
+
+        <section>
+            <div class="flipBox">
+                <figure>
+                    <img src="../media/metadata.jpg" alt="" class="flipImage">
+                </figure>
+
+                <div class="flipText" id="meta">
+                    <h3>Mit gyűjtenek a hagyományos üzenetküldők?</h3>
+                    <p>
+                        Sok nagy szolgáltató — különösen azok, amelyek hirdetésre és üzleti profilozásra építenek — naplózza vagy elemzi a metaadatokat:
+                        kapcsolatmintákat, eszközadatokat, helyadatokat, és ezeket összekapcsolja profillal. Ezek az információk rendkívül értékesek a
+                        célzott hirdetés és a felhasználói viselkedés modellezése szempontjából.
+                    </p>
+                    <p>
+                        Ezzel szemben néhány biztonság-orientált alkalmazás kifejezetten a metaadatok minimalizálására törekszik: például
+                        lehetőség szerint nem kötnek fiókot telefonszámhoz vagy e-mailhez, kevés naplózást tartanak meg, és a hálózati
+                        forgalom anonimítására törekednek. A Session például célja szerint a metaadat-gyűjtés megszüntetésére és a decentralizációra
+                        épít. Threema is hangsúlyozza a "privacy by design" elvet, például lehetőséget ad fiók létrehozására szám nélkül.
+                    </p>
+                </div>
+                <img src="../media/flip.png" alt="" class="flip" onclick="flippingBox(this.parentElement)">
+                <img src="../media/x.png" alt="" class="backFlip">
+            </div>
+        </section>
+    </section>
+
+    <section>
+            <h2>Profilozás, a „semmi sincs ingyen” gazdasága</h2>
+
+        <section>
+            <h3>Hogyan lesz az adataidból pénz?</h3>
+            <p>
+                Sok „ingyenes” szolgáltatás valójában a felhasználói adatok gyűjtésével és ezek alapján célzott hirdetések elhelyezésével
+                keres. Az adathalmazokból gépi tanulással trendeket, érdeklődési köröket és vásárlási hajlandóságokat állítanak elő — ezek a
+                profilok értékesek a hirdetők számára. A tudományos irodalom és elemzések is rámutatnak, hogy a célzott hirdetés egy külön iparág,
+                amely nagy mennyiségű adathoz és finom modellezéshez kötődik.
+            </p>
+        </section>
+
+        <section>
+            <h3>Miért „fizetünk” az adatainkkal?</h3>
+            <p>
+                A szolgáltatók úgy optimalizálják termékeiket, hogy minél több időt töltsünk az alkalmazásban, és minél több hirdetést/láthatóságot
+                generáljunk. Ennek érdekében használják fel a profilozás eredményeit személyre szabott ajánlásokhoz, értesítésekhez és feed-algoritmusokhoz —
+                mindez növeli a bevételt, de cserébe adatokat kell adni. Néhány privát messenger vállalja, hogy nem használ hirdetési modellt, ezért más
+                bevételi forrásokra támaszkodnak (pl. egyszeri vásárlás, adományok, előfizetés). Jelek szerint ez a modell a Signal esetében is tudatos döntés: a Signal nonprofitként minimális metaadatot tart meg, és a működés költségeit felhasználói támogatásból fedezi.
+            </p>
+        </section>
+    </section>
+
+
+    <section>
+        <h2>Előnyök és korlátok egy E2EE + metaadat-minimalista megoldásnál</h2>
+
+        <section>
+            <h3>Előnyök</h3>
+            <ul>
+                <li><strong>Tartalmi privátsság:</strong> ha csak a címzettek dekódolhatják a tartalmat, csökken a kiszivárgás és a harmadik felek általi olvasás esélye.</li>
+                <li><strong>Kevesebb profilozás:</strong> ha kevesebb metaadatot gyűjtenek és nem kötnek fiókokatszemélyes azonosítókhoz, nehezebb részletes profilokat építeni (kevesebb célzott reklám).</li>
+                <li><strong>Függetlenség hirdetőktől:</strong> a többnyire fizetős vagy adomány-alapú modellek kevésbé függnek a hirdetési bevételtől, így nem kényszerülnek annyira a felhasználói figyelem maximalizálására.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Korlátok és hátrányok</h3>
+            <p>
+                A technológia és a működés sokszor nem elegendő: felhasználói viselkedés, mentések, és harmadik féltől származó integrációk (például
+                felhőmentés) továbbra is gyengíthetik a privátsságot. Emellett:
+            </p>
+            <ul>
+                <li>Az E2EE nem védi a metaadatok ellen, ha azokat a szolgáltató vagy hálózati szereplők gyűjtik.</li>
+                <li>A „kevesebb metaadat” technikák (például Session decentralizált routingja) összetettebb infrastruktúrát és karbantartást igényelhetnek.</li>
+                <li>A felhasználói élmény (pl. fiók-visszaállítás, címjegyzék-szinkronizáció) bonyolultabb lehet, ha nem használunk telefonszámot/e-mailt azonosításra. Ez tudatos kompromisszum lehet.</li>
+            </ul>
+        </section>
+    </section>
+
+    <section>
+        <h2>Algoritmusok, személyre szabás és a „buborék” jelenség</h2>
+
+        <section>
+            <h3>Hogyan működik a személyre szabás?</h3>
+            <p>
+                A platformok összegyűjtik, elemezik és modellezik a felhasználói viselkedést — a cél a relevancia növelése: minél „pontosabban” illeszkedő
+                tartalmak megjelenítése növeli az elköteleződést. Ebből a folyamatból keletkeznek a személyre szabott hírfolyamok és ajánlók. A személyre
+                szabás ezért üzleti és termékstratégiai eszköz is.
+        </section>
+
+        <section>
+            <h3>Filter-bubble és társadalmi hatások</h3>
+            <p>
+                A „filter-bubble” kifejezés arra a jelenségre utal, amikor az algoritmusok és a felhasználói választások együtt olyan információs környezetet hoznak létre,
+                amely főként a meglévő nézeteket erősíti — így kevesebb ellentétes nézőponttal találkozunk. Ez hozzájárulhat polarizációhoz, a párbeszéd
+                beszűküléséhez és — szélsőséges esetben — radikalizációhoz, mert a megerősítés és zsigeri reakciók felgyorsulhatnak. A jelenséget Eli Pariser és más kutatók
+                felvetései és empirikus vizsgálatok tárgyalják.
+            </p>
+            <p>
+                Fontos megjegyezni, hogy nem csak az algoritmusok okolhatók: a felhasználói választások (kikkel barátkozunk, mit olvasunk) és az algoritmusok kölcsönhatása
+                együtt alakítja a végső „buborékot”. Mégis: ha egy szolgáltató hirdetés- és ajánlóorientált, akkor a technikai megoldások és a gazdasági ösztönzők
+                együttesen fokozzák ezt a hatást.
+            </p>
+        </section>
+    </section>
+
+
+    <section>
+        <h2>Következtetés — miért fontos ez nekünk?</h2>
+        <p>
+        Röviden: az E2EE véd a tartalom kiszivárgása ellen, a metaadat-minimalizálás pedig csökkenti a profilozhatóságot és a célzott manipuláció
+        esélyét. Az „ingyenes” modellek jellemzően adatokat és metaadatokat használnak üzleti célokra, ezért ha a pri­vát­ságot helyezzük előtérbe,
+        tudatos döntéseket kell hoznunk az alkalmazásválasztásban és beállításokban. A következő aloldalak (app-ismertetők) konkrétabb példákat
+        és összehasonlításokat hoznak majd (Signal, Threema, Session és mások technikai és használati részletei).
+        </p>
+    </section>
+    <p class="ai">A szöveg AI használatával készült.</p>
+</article>
+</main>
+<footer>
+    <div id="footerDiv">
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Főoldal</a></li>
+                <li><a href="../html/signal.html">Signal</a></li>
+                <li><a href="../html/threema.html">Threema</a></li>
+                <li><a href="../html/session.html">Session</a></li>
+                <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                <li><a href="../html/contact.html">Kapcsolat</a></li>
+                <li><a href="../html/jatek.html">Játék</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

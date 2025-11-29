@@ -1,0 +1,62 @@
+{
+  "General information": {
+    "Developer": {"value": "The Oxen Project", "color": "grey"},
+    "Year of publication": {"value": 2020, "color": "grey"},
+    "Number of downloads (Play Store)": {"value": "1 million", "color": "grey"},
+    "Costs": {"value": "—", "color": "grey"}
+  },
+  "Environment": {
+    "Android": {"value": "yes", "color": "green"},
+    "iOS": {"value": "yes", "color": "green"},
+    "Desktop": {"value": "Windows, macOS, GNU/Linux", "color": "green"},
+    "Web browser": {"value": "no", "color": "red"}
+  },
+  "Usability": {
+    "Multiple accounts/profiles (multi-account)": {"value": "no", "color": "red"},
+    "Use on multiple devices (in addition to mobile device)": {"value": "yes", "color": "green"},
+    "Find/add contacts": {"value": "Session-ID", "color": "grey"}
+  },
+  "Security": {
+    "Open Source": {"value": "MIT, GPLv3", "color": "green"},
+    "Comes without proprietary libraries": {"value": "yes (only F-Droid version)", "color": "yellow"},
+    "Encryption protocol / library": {"value": "Session-Protokoll (missing PFS)", "color": "yellow"},
+    "End-to-end encryption": {"value": "yes", "color": "green"},
+    "Post-quantum encryption": {"value": "no", "color": "red"},
+    "Contact verification possible": {"value": "yes", "color": "green"},
+    "Notification if contact's fingerprint changes": {"value": "not possible/provided", "color": "yellow"},
+    "Last security review/audit": {"value": 2021, "color": "grey"}
+  },
+  "Privacy": {
+    "Tracker integration": {"value": "no", "color": "green"},
+    "Use without phone number possible": {"value": "yes", "color": "green"},
+    "Avoids / Protects metadata during use": {"value": "yes", "color": "green"},
+    "Reasonably useful without sharing the contact list": {"value": "yes", "color": "green"},
+    "Supported push notification services": {"value": "Google (FCM), Apple (APN), Polling", "color": "yellow"},
+    "Advertising-free": {"value": "yes", "color": "green"}
+  },
+  "Sustainability": {
+    "Centralized / Federated / Decentralized": {"value": "decentralized", "color": "green"},
+    "Infrastructure hosting": {"value": "distributed server, attachments stored centrally in Canada (Oxen File Server)", "color": "yellow"},
+    "Transparency / Financing (Including donations)": {"value": "donation-based, non-transparent", "color": "yellow"},
+    "Availability": {"value": "Website, Play Store, F-Droid, App Store", "color": "green"},
+    "Legal jurisdiction": {"value": "Swiss", "color": "yellow"}
+  },
+  "Functions": {
+    "Voice messages": {"value": "yes", "color": "green"},
+    "Audio-/Video-chats": {"value": "yes", "color": "green"},
+    "Group chats": {"value": "yes", "color": "green"},
+    "Maximum number of participants group chat": {"value": 100, "color": "red"},
+    "File exchange": {"value": "yes", "color": "green"},
+    "Self-destructing messages": {"value": "yes", "color": "grey"}
+  },
+  "Backup": {
+    "Storage location": {"value": "no", "color": "red"},
+    "Automated": {"value": "—", "color": "grey"},
+    "Encrypted": {"value": "—", "color": "grey"}
+  },
+  "Kuketz-Blog": {
+    "Link to review": {"value": "—", "color": "grey"},
+    "Operability / Target group": {"value": "Advanced", "color": "grey"},
+    "(subjective) Recommendation": {"value": "very limited", "color": "orange"}
+  }
+}

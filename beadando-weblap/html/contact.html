@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Írj nekünk üzenetet!">
+    <meta name="keywords" content="kapcsolat">
+    <meta name="author" content="Vida Vilmos">
+    <title>Kapcsolat</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <p class="hTitle">Responsible<br>Messaging</p>
+            <button id="menuGomb" >☰</button>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Főoldal</a></li>
+                        <li><a href="../html/signal.html">Signal</a></li>
+                        <li><a href="../html/threema.html">Threema</a></li>
+                        <li><a href="../html/session.html">Session</a></li>
+                        <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                        <li><a href="../html/contact.html">Kapcsolat</a></li>
+                        <li><a href="../html/jatek.html">Játék</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<main>
+    <h1>Írj nekünk!</h1>
+    <p>Kérdésed vagy gondolatod támadt az oldal olvasása közben? Esetleg valamilyen hibás vagy idejétmúlt adatot láttál? <strong>Írj nekünk</strong> az alábbi űrlap segítségével és osszd meg a gondolataidat!</p>
+    <div id="urlapDiv">
+        <form action="https://httpbin.org/post" method="post" id="urlap">
+            <div class="urlap-cella">
+                <label for="lName">Vezetéknév</label>
+                <input type="text" name="textLName" id="lName" autocomplete="family-name">
+                <div id="lNameError" class="errorBox"></div>
+            </div>
+            
+            <div class="urlap-cella">
+                <label for="fName">Keresztnév</label>
+                <input type="text" name="textFName" id="fName" autocomplete="given-name">
+                <div id="fNameError" class="errorBox"></div>
+            </div>
+
+            <div class="side-by-side">
+                <div class="urlap-cella">
+                    <label for="birth">Születési dátum</label>
+                    <input type="date" name="dateBirth" id="birth" autocomplete="bday">
+                    <div id="birthError" class="errorBox"></div>
+                </div>
+
+                <div class="urlap-cella">
+                    <label for="favNum">Kedvenc számod</label>
+                    <input type="number" name="NumFavNum" id="favNum" placeholder="42">
+                <div id="favNumError" class="errorBox"></div>
+                </div>
+            </div>
+            
+
+            <div class="urlap-cella">
+                <label for="email">E-mail</label>
+                <input type="email" name="emailEmail" id="email" autocomplete="email" placeholder="minta@emailcim.hu">
+                <div id="emailError" class="errorBox"></div>
+            </div>
+
+            <div class="urlap-cella">
+                <label for="aim">Üzenet tárgya</label>
+                <select name="selectAim" id="aim">
+                    <option value="notSelected">---Válassz tárgyat---</option>
+                    <option value="question">Kérdés</option>
+                    <option value="inacInfo">Elavult információ jelentése</option>
+                    <option value="otherFeedback">Egyéb visszajelzés</option>
+                </select>
+                <div id="aimError" class="errorBox"></div>
+            </div>
+            
+            <div class="urlap-cella">
+                <label for="msg">Üzenet</label>
+                <textarea name="textMsg" id="msg" placeholder="Ide írd az üzenetedet..." rows="10"></textarea>
+                <div id="msgError" class="errorBox"></div>
+            </div>
+
+            <div class="side-by-side">
+                <div class="urlap-cella">
+                    <input type="checkbox" name="checkboxTC" id="TC">
+                    <label for="TC">Elfogadom az ÁSZF-et.</label>
+                    <div id="TCError" class="errorBox"></div>
+                </div>
+
+                <button type="submit">Küldés</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div id="footerDiv">
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Főoldal</a></li>
+                <li><a href="../html/signal.html">Signal</a></li>
+                <li><a href="../html/threema.html">Threema</a></li>
+                <li><a href="../html/session.html">Session</a></li>
+                <li><a href="../html/compare.html">Összehasonlítás</a></li>
+                <li><a href="../html/contact.html">Kapcsolat</a></li>
+                <li><a href="../html/jatek.html">Játék</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Placeholder</li>
+            <li>Placeholder</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

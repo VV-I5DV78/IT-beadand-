@@ -1,0 +1,62 @@
+{
+  "General information": {
+    "Developer": {"value": "Meta Platforms", "color": "grey"},
+    "Year of publication": {"value": 2011, "color": "grey"},
+    "Number of downloads (Play Store)": {"value": "5 billion", "color": "grey"},
+    "Costs": {"value": "—", "color": "grey"}
+  },
+  "Environment": {
+    "Android": {"value": "yes", "color": "green"},
+    "iOS": {"value": "yes", "color": "green"},
+    "Desktop": {"value": "Windows, macOS", "color": "yellow"},
+    "Web browser": {"value": "yes", "color": "green"}
+  },
+  "Usability": {
+    "Multiple accounts/profiles (multi-account)": {"value": "no", "color": "red"},
+    "Use on multiple devices (in addition to mobile device)": {"value": "yes", "color": "green"},
+    "Find/add contacts": {"value": "Facebook contacts, address book", "color": "grey"}
+  },
+  "Security": {
+    "Open Source": {"value": "no", "color": "red"},
+    "Comes without proprietary libraries": {"value": "no", "color": "red"},
+    "Encryption protocol / library": {"value": "proprietary / Signal Protocol", "color": "orange"},
+    "End-to-end encryption": {"value": "yes, optional in group chats", "color": "yellow"},
+    "Post-quantum encryption": {"value": "no", "color": "red"},
+    "Contact verification possible": {"value": "yes", "color": "green"},
+    "Notification if contact's fingerprint changes": {"value": "no", "color": "red"},
+    "Last security review/audit": {"value": "—", "color": "red"}
+  },
+  "Privacy": {
+    "Tracker integration": {"value": "yes", "color": "red"},
+    "Use without phone number possible": {"value": "yes, but Facebook account required", "color": "yellow"},
+    "Avoids / Protects metadata during use": {"value": "no", "color": "red"},
+    "Reasonably useful without sharing the contact list": {"value": "linked to Facebook account", "color": "yellow"},
+    "Supported push notification services": {"value": "Google (FCM), Apple (APN)", "color": "red"},
+    "Advertising-free": {"value": "no", "color": "red"}
+  },
+  "Sustainability": {
+    "Centralized / Federated / Decentralized": {"value": "centralized", "color": "red"},
+    "Infrastructure hosting": {"value": "Meta, Amazon", "color": "grey"},
+    "Transparency / Financing (Including donations)": {"value": "non-transparent, advertisements", "color": "red"},
+    "Availability": {"value": "Play Store, App Store", "color": "red"},
+    "Legal jurisdiction": {"value": "USA", "color": "red"}
+  },
+  "Functions": {
+    "Voice messages": {"value": "yes", "color": "green"},
+    "Audio-/Video-chats": {"value": "yes", "color": "green"},
+    "Group chats": {"value": "yes", "color": "green"},
+    "Maximum number of participants group chat": {"value": "250", "color": "yellow"},
+    "File exchange": {"value": "yes", "color": "green"},
+    "Self-destructing messages": {"value": "yes", "color": "grey"}
+  },
+  "Backup": {
+    "Storage location": {"value": "locally and / or Cloud (iCloud/Google Drive)", "color": "green"},
+    "Automated": {"value": "after setup", "color": "green"},
+    "Encrypted": {"value": "for iOS keys with the provider (unless ADP is active)", "color": "yellow"}
+  },
+  "Kuketz-Blog": {
+    "Link to review": {"value": "—", "color": "grey"},
+    "Operability / Target group": {"value": "Beginner", "color": "grey"},
+    "(subjective) Recommendation": {"value": "no", "color": "red"}
+  }
+}
