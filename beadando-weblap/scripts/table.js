@@ -518,13 +518,12 @@ window.jsonData = [
 function buildTable(jsonData) {
     const container = document.getElementById("tablazatDiv");
 
-    // --- 1) OSZLOPOK: Messenger nevek ---
+    //OSZLOPOK
     const appNames = jsonData.map(app => app.name);
-
-    // --- 2) Gyűjtsük össze az összes kategóriát (General info, Security, stb.) ---
+    
     const categories = Object.keys(jsonData[0]).filter(k => k !== "name");
 
-    // --- HTML táblázat építése ---
+
     const table = document.createElement("table");
     
     const tcaption = document.createElement("caption");
@@ -532,7 +531,7 @@ function buildTable(jsonData) {
 
     table.appendChild(tcaption);
 
-    // ---- Fejléc sor ----
+    //FEJLÉC
     const tblhead = document.createElement("thead");
     const headerRow = document.createElement("tr");
     tblhead.classList.add("first")
@@ -584,7 +583,7 @@ function buildTable(jsonData) {
 
     const tblbody = document.createElement("tbody");
 
-    // --- 3) Kategóriák bejárása ---
+    //NAGY KATEGÓRIÁK
     categories.forEach(category => {
         // Kategória címsor (egy teljes szélességű sor)
         const catRow = document.createElement("tr");
@@ -598,7 +597,7 @@ function buildTable(jsonData) {
         catRow.appendChild(catCell);
         tblbody.appendChild(catRow);
 
-        // --- 4) Sorok a kategórián belül ---
+        //KATEGÓRIÁN BELÜL
         const rowKeys = Object.keys(jsonData[0][category]);
 
         rowKeys.forEach(rowKey => {
