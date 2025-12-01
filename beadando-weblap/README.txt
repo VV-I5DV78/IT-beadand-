@@ -1,4 +1,16 @@
------ FONTOK ----- 
+-----WEBLAP LEÍRÁSA-----
+A weblap a z instant messengerek felelős fálasztását járja körül, érintve a különbőző felmerülő problémákat és megvizsgálva néhány konkrét applikációt is.
+
+-----AI-----
+A HTML struktúra lényeges része, illetve a tartalom ~90%-a AI terméke, illetve a JavaScript kódok megírásában mint "mentor" szerepelnek. (ChatGpt; LeChat (Mistral AI)).
+
+-----JavaScript-----
+jatek.js - A weblapon található játék működéséért felel.
+script.js - Álltalános feladatokat lát el, így a mobilnézet szendvicsmenüjét, az űrlapokat és a főoldalon található képelrejtést működteti.
+table.js - A weblapon található táblázat felépítéséért felel.
+
+----- FONTOK -----
+Ubuntu
 Google Fonts-ból letöltve
 
 ----- KÉPEK -----
@@ -28,5 +40,6 @@ https://apps.apple.com/
 
 favicon
 saját, Threema logóból inspirálódva
+
 
 
