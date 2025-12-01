@@ -585,7 +585,7 @@ function buildTable(jsonData) {
 
     //NAGY KATEGÓRIÁK
     categories.forEach(category => {
-        // Kategória címsor (egy teljes szélességű sor)
+
         const catRow = document.createElement("tr");
         const catCell = document.createElement("td");
 
@@ -603,12 +603,10 @@ function buildTable(jsonData) {
         rowKeys.forEach(rowKey => {
             const tr = document.createElement("tr");
 
-            // Első cella = a sor neve (pl "Audio-/Video-chats")
             const labelCell = document.createElement("td");
             labelCell.textContent = rowKey;
             tr.appendChild(labelCell);
 
-            // A többi cella = érték + szín (class)
             jsonData.forEach(app => {
                 const td = document.createElement("td");
                 const item = app[category][rowKey];
