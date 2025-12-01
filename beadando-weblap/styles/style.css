@@ -90,6 +90,7 @@ header {
     z-index: 1;
     padding: 1rem 0;
     background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
 #headerDiv{
@@ -115,7 +116,6 @@ header h1 {
 }
 
 #menu {
-    /*inset: 2rem;*/
     display: none;
     position: fixed;
 }
@@ -154,7 +154,6 @@ header h1 {
 
 .flipBox {
     margin: 0 8px 20px 8px;
-    /*box-sizing: content-box;*/
     position: relative;
 }
 
@@ -184,13 +183,8 @@ header h1 {
     inset: 0;
     overflow-y: hidden;
     opacity: 0;
-    /*display: none;*/         
     padding: 15px;
     border-radius: 16px;
-    /*max-height: 250px;        
-    overflow-y: auto;         
-    box-sizing: border-box;*/
-
 }
 
 #lakat {
@@ -462,6 +456,4 @@ thead.first {
     header {
         align-items: center;
     }
-
-
  }
