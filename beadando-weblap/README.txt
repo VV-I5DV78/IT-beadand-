@@ -10,7 +10,7 @@ script.js - Álltalános feladatokat lát el, így a mobilnézet szendvicsmenüj
 table.js - A weblapon található táblázat felépítéséért felel.
 
 ----- FONTOK -----
-Ubuntu
+UbuntuSans
 Google Fonts-ból letöltve
 
 ----- KÉPEK -----
@@ -40,6 +40,7 @@ https://apps.apple.com/
 
 favicon
 saját, Threema logóból inspirálódva
+
 
 
 
